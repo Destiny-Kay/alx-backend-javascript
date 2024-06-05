@@ -1,0 +1,9 @@
+services:
+  nodeapp:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: node-12-app
+    container_name: node_12_container
+    volumes:
+      - ${PWD}:/app
